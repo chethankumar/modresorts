@@ -1,7 +1,7 @@
 {
   "env_choice": "development",
   "development": {
-    "hostname": "mobilefoundation-nn40-server.eu-gb.mybluemix.net",
+    "hostname": "mobilefoundation-agc2-server.eu-gb.mybluemix.net",
     "port": "443",
     "servercred": "admin:admin",
     "key": "tqLEPMVEoUD8w0ywoZEFz9ZRqUUlU4iQ"

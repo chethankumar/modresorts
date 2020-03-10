@@ -1,14 +1,16 @@
 {
-  "env_choice": "default",
+  "env_choice": "development",
   "development": {
     "hostname": "mobilefoundation-nn40-server.eu-gb.mybluemix.net",
     "port": "443",
-    "servercred": "admin:admin"
+    "servercred": "admin:admin",
+    "key": "tqLEPMVEoUD8w0ywoZEFz9ZRqUUlU4iQ"
   },
   "production": {
     "hostname": "184.173.5.44",
     "port": "30989",
-    "servercred": "admin:admin"
+    "servercred": "admin:admin",
+    "key": "tqLEPMVEoUD8w0ywoZEFz9ZRqUUlU4iQ"
   },
   "default": {
     "hostname": "9.109.199.146",

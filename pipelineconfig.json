@@ -3,7 +3,7 @@
   "development": {
     "hostname": "mobilefoundation-agc2-server.eu-gb.mybluemix.net",
     "port": "443",
-    "servercred": "admin:admin",
+    "servercred": "admin:volTa$ppyn",
     "key": "tqLEPMVEoUD8w0ywoZEFz9ZRqUUlU4iQ"
   },
   "production": {

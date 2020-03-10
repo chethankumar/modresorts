@@ -1,0 +1,27 @@
+{
+  "env_choice": "development",
+  "development": {
+    "hostname": "mobilefoundation-agc2-server.eu-gb.mybluemix.net",
+    "port": "443",
+    "servercred": "admin:volTa$ppyn",
+    "key": "tqLEPMVEoUD8w0ywoZEFz9ZRqUUlU4iQ"
+  },
+  "production": {
+    "hostname": "184.173.5.44",
+    "port": "30989",
+    "servercred": "admin:admin",
+    "key": "tqLEPMVEoUD8w0ywoZEFz9ZRqUUlU4iQ"
+  },
+  "default": {
+    "hostname": "9.109.199.146",
+    "port": "9080",
+    "servercred": "admin:admin",
+    "key": "tqLEPMVEoUD8w0ywoZEFz9ZRqUUlU4iQ"
+  },
+  "userName":"charankumarpalla",
+  "repoName": "modresorts",
+  "ios": {
+     "host": "9.109.199.146",
+     "botId": "1d3525b721c85348eb204583df000416"
+  }
+}

@@ -23,6 +23,7 @@ export class ResortsPage {
   ) {
     this.getResortsData();
   }
+  
 
   showFeedback() {
     WLAuthorizationManager.obtainAccessToken().then(

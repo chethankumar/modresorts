@@ -8,9 +8,7 @@ node > out_${jsonFile} <<EOF
 var data1 = require('./${jsonFile}');
 //Manipulate data
 var data = {};
-# if(!data1[0].label){
   data1[0].label = data1[0].filename;
-# }
 data = data1[0];
 data.author = 'admin';
 data.author_display = 'admin';

@@ -1,5 +1,5 @@
 {
-  "env_choice": "default",
+  "env_choice": "production",
   "development": {
     "hostname": "mobilefoundation-agc2-server.eu-gb.mybluemix.net",
     "port": "443",

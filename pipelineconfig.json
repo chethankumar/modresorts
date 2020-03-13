@@ -1,12 +1,12 @@
 {
   "env_choice": "development",
-  "development": {
+  "production": {
     "hostname": "http://modresorts-prod.apps.cpa41-sv20.os.fyre.ibm.com",
     "port": "80",
     "servercred": "admin:admin",
     "key": "tqLEPMVEoUD8w0ywoZEFz9ZRqUUlU4iQ"
   },
-  "production": {
+  "development": {
     "hostname": "184.173.5.44",
     "port": "30989",
     "servercred": "admin:admin",

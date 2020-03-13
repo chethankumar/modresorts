@@ -1,9 +1,9 @@
 {
   "env_choice": "default",
   "development": {
-    "hostname": "mobilefoundation-agc2-server.eu-gb.mybluemix.net",
-    "port": "443",
-    "servercred": "admin:volTa$ppyn",
+    "hostname": "http://modresorts-prod.apps.cpa41-sv20.os.fyre.ibm.com",
+    "port": "80",
+    "servercred": "admin:admin",
     "key": "tqLEPMVEoUD8w0ywoZEFz9ZRqUUlU4iQ"
   },
   "production": {

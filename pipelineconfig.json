@@ -1,5 +1,5 @@
 {
-  "env_choice": "default",
+  "env_choice": "development",
   "development": {
     "hostname": "http://modresorts-prod.apps.cpa41-sv20.os.fyre.ibm.com",
     "port": "80",

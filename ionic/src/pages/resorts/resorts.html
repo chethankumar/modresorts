@@ -24,12 +24,13 @@
       <div class="content-wrapper">
         <span>{{activeSlide.heading}}</span>
         <h1>{{activeSlide.subHeading}}</h1>
-        <p>
+        <p>. 
           {{activeSlide.description}}
         </p>
       </div>
     </div>
   </div>
+  
 
   <div class="shapes-container-vivid">
     <div class="shape shape-one"></div>
@@ -37,13 +38,13 @@
   </div>
   <div class="web-content" *ngIf="viewPlatform === 'web'">
     <div class="resorts-top-content">
-      <h4>Discover</h4>
+      <h4>Discover</h4> 
       <p>Let's get into the unexplored world</p>
     </div>
     <ion-list>
       <ion-card
         *ngFor="let slide of slidesData; let i = index"
-        (click)="getSlideDetailsWeb(i)"
+        (click)="getSlideDetailsWeb(i)" 
       >
         <div class="slide-content">
           <img src="{{slide.img}}" />

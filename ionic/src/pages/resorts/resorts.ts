@@ -24,6 +24,7 @@ export class ResortsPage {
     this.getResortsData();
     // this.gotoChatbot();
   }
+  
 
   showFeedback() {
     WLAuthorizationManager.obtainAccessToken().then(

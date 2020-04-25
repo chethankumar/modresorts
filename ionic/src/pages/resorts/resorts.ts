@@ -22,12 +22,13 @@ export class ResortsPage {
     public platform: Platform
   ) {
     this.getResortsData();
+    // this.gotoChatbot();
   }
 
   showFeedback() {
     WLAuthorizationManager.obtainAccessToken().then(
       function(accessToken) {
-        WL.Analytics.triggerFeedbackMode();
+        // WL.Analytics.triggerFeedbackMode();
       },
       function(error) {
         alert('Failed to connect to MobileFirst Server');
@@ -35,11 +36,13 @@ export class ResortsPage {
     );
   }
 
-  username = (this.dataStore as any).username || 'USER';
+  username = (this.dataStore as any).username || 'Steve';
   slidesData: Array<Object> = [];
 
   slideOptions = {
-    initialSlide: 0
+    initialSlide: 3,
+    direction: 'horizontal',
+    autoplay: 1000
   };
   activeSlide: Object = {};
   viewPlatform = '';
@@ -103,7 +106,7 @@ export class ResortsPage {
       function(response) {
         // alert('Success: ' + response.responseText);
         self.slidesData = JSON.parse(response.responseText);
-        self.activeSlide = self.slidesData[0];
+        self.activeSlide = self.slidesData[2];
 
         // WLAuthorizationManager.obtainAccessToken().then(
         //   function(accessToken) {
@@ -119,4 +122,22 @@ export class ResortsPage {
       }
     );
   }
+
+  gotoChatbot() {
+    this.navCtrl.parent.select(3);
+  }
+
+  // listen() {
+  //   console.log('listen');
+  //   let initParams: any = {
+  //     AssistantURL:
+  //       'https://gateway.watsonplatform.net/assistant/api/v2/assistants/929c8b11-31cc-4d68-ac94-b91b30ed8c89/sessions',
+  //     ApiKey: 'Qhq_8ImcmabnjiA95hBBC-Nbd693RgyfGsyQFzLpDKNs'
+  //   };
+  //   MFVoice.init(initParams);
+  //   var map = {};
+  //   map['Show_Resorts'] = this.gotoChatbot();
+  //   MFVoice.registerIntentMap(map);
+  //   MFVoice.listenToVoiceCommand();
+  // }
 }

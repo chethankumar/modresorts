@@ -66,4 +66,16 @@ export class ResortsdetailsPage {
     });
     toast.present();
   }
+
+  feedback() {
+    console.log('inside feedback');
+    WLAuthorizationManager.obtainAccessToken().then(
+      function(accessToken) {
+        WL.Analytics.triggerFeedbackMode();
+      },
+      function(error) {
+        alert('Failed to connect to MobileFirst Server');
+      }
+    );
+  }
 }

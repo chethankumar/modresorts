@@ -6,56 +6,61 @@
 -->
 
 <ion-content padding="" text-center="" id="page-login">
-  <section class="skew">
-  </section>
+  <section class="skew"></section>
   <section class="content">
-    <ion-img style="margin-top:2em; width:200px;height:200px;background: transparent !important;"
-      src="build/assets/imgs/logo.png"></ion-img>
+    <ion-img
+      style="margin-top:2em; width:200px;height:200px;background: transparent !important;"
+      src="build/assets/imgs/logo.png"
+    ></ion-img>
 
-      <div component-name="studio-grid-row" class="row" style="width:100%;">
+    <div component-name="studio-grid-row" class="row" style="width:100%;">
+      <div
+        component-name="studio-grid-col"
+        class="center-xs col-xs-offset-0 col-xs-12"
+        component-height="2"
+        component-ystart="6.857142857142857"
+      >
         <div
-          component-name="studio-grid-col"
-          class="center-xs col-xs-offset-0 col-xs-12"
-          component-height="2"
-          component-ystart="6.857142857142857"
+          studio-id="home_Login Form_3966"
+          component-name="studio-challenge-handler"
         >
-          <div
-            studio-id="home_Login Form_3966"
-            component-name="studio-challenge-handler"
-          >
-            <div class="login-wrapper">
-              <ion-item
-                style="width:100%; background:transparent; font-weight: 700;"
-              >
-                <ion-label color="primary" floating="">User Name</ion-label>
-                <ion-input
-                  type="text"
-                  id="username"
-                  [(ngModel)]="username"
-                ></ion-input>
-              </ion-item>
-              <ion-item
-                style="width:100%; background:transparent; font-weight: 700;"
-              >
-                <ion-label color="primary" floating="">Password</ion-label>
-                <ion-input
-                  type="password"
-                  id="password"
-                  [(ngModel)]="password"
-                ></ion-input>
-              </ion-item>
-              <button
-                style="margin: 4rem; border-radius:10em; padding-left:4em; padding-right:4em; font-weight: 700;"
-                id="login_button"
-                name="loginbutton"
-                ion-button=""
-                (click)="login()"
-              >
-                Login
-              </button>
-            </div>
+          <div class="login-wrapper">
+            <ion-item
+              style="width:100%; background:transparent; font-weight: 700;"
+            >
+              <ion-label color="primary" floating="">User Name</ion-label>
+              <ion-input
+                type="text"
+                id="username"
+                [(ngModel)]="username"
+              ></ion-input>
+            </ion-item>
+            <ion-item
+              style="width:100%; background:transparent; font-weight: 700;"
+            >
+              <ion-label color="primary" floating="">Password</ion-label>
+              <ion-input
+                type="password"
+                id="password"
+                [(ngModel)]="password"
+              ></ion-input>
+            </ion-item>
+            <button
+              style="margin: 4rem; border-radius:10em; padding-left:4em; padding-right:4em; font-weight: 700;"
+              id="login_button"
+              name="loginbutton"
+              ion-button=""
+              (click)="login()"
+            >
+              Login
+            </button>
           </div>
         </div>
+        <button style="margin-top:4em;" (click)="faceid()" ion-button icon-only>
+          <ion-icon name="person" style="color:#000000;"></ion-icon>
+        </button>
+        <p>Login with your face</p>
       </div>
+    </div>
   </section>
 </ion-content>

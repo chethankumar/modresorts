@@ -15,7 +15,7 @@ export class TabsPage {
   tab1Root = ResortsPage;
   tab2Root = MerchPage;
   tab3Root = ChatbotPage;
-  tab4Root = AttractionsPage;
+  tab4Root = SettingsPage;
 
   constructor(public navCtrl: NavController, public renderer: Renderer) {}
 }

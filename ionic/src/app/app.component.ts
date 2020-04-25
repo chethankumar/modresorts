@@ -25,7 +25,7 @@ import { OtploginPage } from '../pages/otplogin/otplogin';
   providers: [LiveUpdateProvider]
 })
 export class MyApp {
-  rootPage: any = OtploginPage;
+  rootPage: any = LoginPage;
 
   constructor(
     public platform: Platform,
@@ -37,7 +37,7 @@ export class MyApp {
   ) {}
   initializeApp(renderer, cdr) {
     this.platform.ready().then(() => {
-      this.rootPage = OtploginPage;
+      this.rootPage = LoginPage;
       cdr.detectChanges();
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.

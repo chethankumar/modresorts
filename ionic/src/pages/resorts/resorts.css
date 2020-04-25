@@ -84,7 +84,7 @@ font-size: 3rem;
   align-items: flex-start;
   }
       #page-resorts .mobile-content ion-slide {
-          width: 90%;
+          width: 100%;
       }
       #page-resorts .mobile-content ion-slide .slide-zoom .slide-content{
           margin: 2rem;
